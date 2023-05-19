@@ -14,7 +14,7 @@ header{
 #page1{
 
     height: 100vh;
-    background: url(slike/page1.png);
+    background: url(page1.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -65,7 +65,7 @@ header{
 
 #page3{
     height: 100vh;
-    background: url(slike/page2.png);
+    background: url(page2.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
