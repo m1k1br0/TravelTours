@@ -249,25 +249,26 @@ footer a:hover{
 .text{
     display: inline-block;
     border: 1px solid white;
-    width: 30%;
+    width: 20%;
     text-align: center;
     height: 40vh;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.355);
     vertical-align: bottom;
+    margin-left: 6vh;
 }
 
 .text2{
     display: inline-block;
     border: 1px solid white;
-    width: 30%;
+    width: 20%;
     text-align: center;
     height: 40vh;
-
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.355);
     vertical-align: middle;
     margin-top: 3vh;
+    margin-left: 6vh;
 }
 
 
