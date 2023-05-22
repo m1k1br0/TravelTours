@@ -14,7 +14,7 @@ header{
     width: 100vw;
     display: flex;
     height: 8vh;
-    background-color: #070037;
+    background-color: #fff;
 }
 
 body{
@@ -27,9 +27,9 @@ body{
 #page1{
     width: 100vw;
     height: 100vh;
-
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: #fff;
 }
 
 #page2{
@@ -89,7 +89,7 @@ body{
     position: absolute;
     height: 0.5vh;
     width: 7vw;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     right: 0.1vw;
 }
 
@@ -98,7 +98,7 @@ body{
     position: absolute;
     height: 0.5vh;
     width: 7vw;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin-top: 1.25vh;
     right: 0.1vw;
 }
@@ -108,14 +108,14 @@ body{
     position: absolute;
     height: 0.5vh;
     width: 7vw;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin-top: 2.5vh;
     right: 0.1vw;
 
 }
 
 
-input{
+#toggle1{
     display: none;
     opacity: 0;
     position: absolute;
@@ -141,17 +141,17 @@ input{
 }
 
 footer{
-    background-color: #070037;
+    background-color: white;
     height: 20vh;
     text-align: center;
 }
 
 li a{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 li a:hover{
-    border-bottom:2px solid white;
+    border-bottom:2px solid rgb(0, 0, 0);
 }
 
 #navigacija ul {
@@ -175,7 +175,7 @@ li a:hover{
 #logo h1{
     display: block;
     margin: 1.2vh 5vh;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 ul{
     display: block;
@@ -216,13 +216,13 @@ button a{
 
 footer h1{
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 footer h2{
     text-align: center;
-    color: white;
+    color: rgb(5, 0, 0);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -232,13 +232,13 @@ iframe{
 }
 footer p{
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 200;
     margin-top: 1.5vh;
 }
 footer a{
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 200;
 
 }
@@ -274,7 +274,7 @@ footer a:hover{
 
 .text2 p{
     width: 90%;
-    color: wheat;
+    color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin: 3vh auto;
@@ -282,7 +282,7 @@ footer a:hover{
 
 .text p{
     width: 90%;
-    color: wheat;
+    color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin: 3vh auto;
@@ -398,7 +398,7 @@ footer a:hover{
     ul{
         display: none;
     }
-    input{
+    #toggle1{
         display: grid;
     }
 }
@@ -466,51 +466,173 @@ footer a:hover{
 }   
 
 
+#toggle{
+    position: absolute;
+    bottom: 5vh;
+    left: 5vh;
+    width: 3vh;
+    height: 3vh;
+
+}
 
 
-
-input:checked ~ header ul {
+#toggle1:checked ~ header ul {
     display: grid;
     margin: 0 auto;
     position: absolute;
     transition: 0.3s;
 }
 
-input:checked ~ header ul li {
+#toggle1:checked ~ header ul li {
     display: block;
     margin: 0 0 50% 50%;
     
 }
 
-input:checked ~ header  {
+#toggle1:checked ~ header  {
     height: 70vh;
     display: block;
     margin: 0;
 }
 
 
-input:checked ~ #page3 .a  {
+#toggle1:checked ~ #page3 .a  {
 
     top: 670vh;
 
 }
 
+#toggle:checked ~ #page1 {
+
+    background-color: #070037;
+
+}
+
+#toggle:checked ~ header {
+
+    background-color: #070037;
+
+}
+
+#toggle:checked ~ header ul li a {
+
+    color: white;
+
+}
+
+#toggle:checked ~ header ul li a:hover {
+
+    border-bottom: 2px solid white;
+
+}
+
+#toggle:checked ~ header #logo h1 {
+
+   color: white;
+
+}
 
 
-input:checked ~ header .bar1 {
+#toggle:checked ~ #page1 .text p  {
+
+    color: wheat;
+
+}
+
+
+#toggle:checked ~ #page1 .text2     p  {
+
+    color: wheat;
+
+}
+
+#toggle:checked ~ footer  {
+
+    background-color: #070037;
+    transition: 0.5s ease;
+}
+
+
+
+#toggle:checked ~ footer h1  {
+
+    color: #fff;
+    transition: 0.5s ease;
+}
+#toggle:checked ~ footer h2 {
+
+    color: #fff;
+ transition: 0.5s ease;
+}
+#toggle:checked ~ footer p {
+
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#toggle:checked ~ footer a {
+
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+
+#toggle:checked ~ header .tricrte .bar1 {
+
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+#toggle:checked ~ header .tricrte .bar2 {
+
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+#toggle:checked ~ header .tricrte .bar3 {
+
+    background-color: #fff;
+    transition: 0.5s ease;
+
+}
+
+
+#toggle1:checked ~ header .bar1 {
     position: absolute;
     transform: rotate(45deg);
     margin-top: 1vh;
     transition: 0.5s;
 }
 
-input:checked ~ header .bar2 {
+#toggle1:checked ~ header .bar2 {
     display: none;
 }
 
-input:checked ~ header .bar3{
+#toggle1:checked ~ header .bar3{
     transform: rotate(-45deg);
     margin-top: 1vh;
     transition: 0.5s;
+}
+
+#toggle{
+    opacity: 0;
+}
+
+#toggle1:checked ~ html body {
+    background-color: #fff;
+}
+
+#play{
+    position: absolute;
+    bottom: 5vh;
+    left: 6vh;
+
+}
+
+#toggle:checked ~ div p i{
+    color: wheat;
+}
+
+#play #playp{
+    font-size: 2rem;
 }
 
