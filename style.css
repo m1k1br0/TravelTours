@@ -130,6 +130,9 @@ body{
     cursor: pointer;
 }
 
+#toggle1::checked ~ button {
+background-color:black;
+}
 
 #page3{
     height: 100vh;
