@@ -19,6 +19,11 @@ header{
 
 input{
 z-index:99;
+    
+}
+
+input:hover{
+cursor:pointer;
 }
 
 body{
