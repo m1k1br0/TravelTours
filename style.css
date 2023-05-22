@@ -1,0 +1,637 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+svg{
+    position: absolute;
+    bottom: 0;
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    height: 8vh;
+    background-color: #fff;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #070037;
+    overflow-x:hidden;
+}
+
+#page1{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #fff;
+}
+
+#page2{
+    background-color: orangered;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+
+}
+
+
+
+.page2div{
+    display: inline-block;
+    background-color: white;
+    height: 60vh;
+    width: 30vw;
+    margin-top: 15vh;
+    margin-right: 3vh;
+    border-radius: 25px;
+    box-shadow: 6px 6px 8px 5px rgba(1, 0, 0, 0.461), 0 6px 20px 0 rgba(1, 0, 0, 0.423);
+    vertical-align: middle;
+    text-align: center;
+}
+
+.page2div p{
+    color: #070037;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5vh;
+}
+
+.page2div img{
+    margin: 10vh auto;
+    width: 50vh;
+    display: block;
+    border-radius: 20px;
+    
+}
+
+#page2 div {
+    text-align: center;
+    color: #070037;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.tricrte{
+    display: none;
+    position: absolute;
+    top: 2.7vh;
+    right: 7vw;
+}
+
+.bar1{
+    display: block;
+    position: absolute;
+    height: 0.5vh;
+    width: 7vw;
+    background-color: rgb(0, 0, 0);
+    right: 0.1vw;
+}
+
+.bar2{
+    display: block;
+    position: absolute;
+    height: 0.5vh;
+    width: 7vw;
+    background-color: rgb(0, 0, 0);
+    margin-top: 1.25vh;
+    right: 0.1vw;
+}
+
+.bar3{
+    display: block;
+    position: absolute;
+    height: 0.5vh;
+    width: 7vw;
+    background-color: rgb(0, 0, 0);
+    margin-top: 2.5vh;
+    right: 0.1vw;
+
+}
+
+
+#toggle1{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 2.7vh;
+    right: 8vw;
+    width: 5vw ;
+    height: 3vh;
+    cursor: pointer;
+}
+
+
+#page3{
+    height: 100vh;
+    background: url(slike/page2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#navigacija ul li{
+    display: inline-block;
+    margin-top: 3vh;
+
+}
+
+footer{
+    background-color: white;
+    height: 20vh;
+    text-align: center;
+}
+
+li a{
+    color: rgb(0, 0, 0);
+}
+
+li a:hover{
+    border-bottom:2px solid rgb(0, 0, 0);
+}
+
+#navigacija ul {
+    text-align: right;
+}
+
+#navigacija , #logo{
+    flex-grow: 1;
+}
+
+#logo{
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+#navigacija{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#logo h1{
+    display: block;
+    margin: 1.2vh 5vh;
+    color: rgb(0, 0, 0);
+}
+ul{
+    display: block;
+    margin-right: 20vh;
+}
+
+#home2{
+    margin-right: 5vh;
+}
+
+#contact2{
+    margin-right: 5vh;
+}
+
+
+#about2{
+    margin-right: 5vh;
+}
+
+#back{
+    position: fixed;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    margin: 2vh 2vh;
+    font-weight: 600;
+    font-size: 20px;
+    background: transparent;
+    border-color: white;
+}
+button a{
+    color: rgb(255, 255, 255);
+    line-height: 55px;
+    font-size: 30px;
+}
+
+footer h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+footer h2{
+    text-align: center;
+    color: rgb(5, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+iframe{
+    margin-top: 1vh;
+}
+footer p{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    margin-top: 1.5vh;
+}
+footer a{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+
+}
+footer a:hover{
+    border-bottom: 1px solid white;
+}
+
+.text{
+    display: inline-block;
+    border: 1px solid white;
+    width: 20%;
+    text-align: center;
+    height: 40vh;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.355);
+    vertical-align: bottom;
+    margin-left: 6vh;
+}
+
+.text2{
+    display: inline-block;
+    border: 1px solid white;
+    width: 20%;
+    text-align: center;
+    height: 40vh;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.355);
+    vertical-align: middle;
+    margin-top: 3vh;
+    margin-left: 6vh;
+}
+
+
+.text2 p{
+    width: 90%;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 3vh auto;
+}
+
+.text p{
+    width: 90%;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 3vh auto;
+    font-size: 0.9rem;
+}
+
+
+.textarea{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.a{
+    position: absolute;
+    top: 250vh;
+    left: 50%;
+    transform: translate(-50%,-50%);    
+    color: #1670f0;
+    padding: 30px 60px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+
+.a span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right , #0c002b, #1779ff);
+    animation: animate1 0.8s linear infinite;
+}
+
+.a span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom , #0c002b, #1779ff);
+    animation: animate2 0.8s linear infinite;
+    animation-delay: 0.4s;
+}
+
+.a span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left , #0c002b, #1779ff);
+    animation: animate3 0.8s linear infinite;
+}
+.a span:nth-child(4){
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top , #0c002b, #1779ff);
+    animation: animate4 0.8s linear infinite;
+    animation-delay: 0.4s;
+}
+
+@keyframes animate1  {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes animate2 {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+@keyframes animate3 {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes animate4 {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+@media (max-width: 837px) {
+
+    .tricrte{
+        display: grid !important;
+    }
+    ul{
+        display: none;
+    }
+    #toggle1{
+        display: grid;
+    }
+}
+
+
+@media (max-width: 1431px) {
+    #page2{
+        height: 200vh;
+    }
+    .page2div{
+        display: block;
+        margin: 0 auto;
+        width: 80vw;
+        height: 55vh;
+    }
+    .page2div img{
+        width: 70vw;
+        height: 20vh;
+    }
+    .a{
+        top: 350vh;
+    }
+
+}
+
+@media(max-width:347px){
+    .text{
+        height:  60vh;
+    }
+
+    .text2{
+        height:  69vh;
+    }
+}
+
+@media (max-width: 1183px) {
+    #page1{
+        height: 350vh;
+    }
+    
+    .text{
+        height: 55vh;
+        display: block;
+        margin: 0 auto;
+        width:70vw ;
+        
+    }
+    .text2{
+        display: block;
+        margin: 2vh auto;
+        width:70vw ;
+        height: 55vh;
+    }
+
+    .text p{
+        font-size: 1rem;
+    }
+
+    .text2 p{
+        font-size: 1rem;
+    }
+    .a{
+        top: 600vh;
+    }
+}   
+
+
+#toggle{
+    position: fixed;
+    bottom: 5vh;
+    left: 5vh;
+    width: 3vh;
+    height: 3vh;
+
+}
+
+
+#toggle1:checked ~ header ul {
+    display: grid;
+    margin: 0 auto;
+    position: absolute;
+    transition: 0.3s;
+}
+
+#toggle1:checked ~ header ul li {
+    display: block;
+    margin: 0 0 50% 50%;
+    
+}
+
+#toggle1:checked ~ header  {
+    height: 70vh;
+    display: block;
+    margin: 0;
+}
+
+
+#toggle1:checked ~ #page3 .a  {
+
+    top: 670vh;
+
+}
+
+#toggle:checked ~ #page1 {
+
+    background-color: #070037;
+
+}
+
+#toggle:checked ~ header {
+
+    background-color: #070037;
+
+}
+
+#toggle:checked ~ header ul li a {
+
+    color: white;
+
+}
+
+#toggle:checked ~ header ul li a:hover {
+
+    border-bottom: 2px solid white;
+
+}
+
+#toggle:checked ~ header #logo h1 {
+
+   color: white;
+
+}
+
+
+#toggle:checked ~ #page1 .text p  {
+
+    color: wheat;
+
+}
+
+
+#toggle:checked ~ #page1 .text2     p  {
+
+    color: wheat;
+
+}
+
+#toggle:checked ~ footer  {
+
+    background-color: #070037;
+    transition: 0.5s ease;
+}
+
+
+#toggle:checked ~ footer h1  {
+
+    color: #fff;
+    transition: 0.5s ease;
+}
+#toggle:checked ~ footer h2 {
+
+    color: #fff;
+ transition: 0.5s ease;
+}
+#toggle:checked ~ footer p {
+
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#toggle:checked ~ footer a {
+
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+
+#toggle:checked ~ header .tricrte .bar1 {
+
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+#toggle:checked ~ header .tricrte .bar2 {
+
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+#toggle:checked ~ header .tricrte .bar3 {
+
+    background-color: #fff;
+    transition: 0.5s ease;
+
+}
+
+
+#toggle1:checked ~ header .bar1 {
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top: 1vh;
+    transition: 0.5s;
+}
+
+#toggle1:checked ~ header .bar2 {
+    display: none;
+}
+
+#toggle1:checked ~ header .bar3{
+    transform: rotate(-45deg);
+    margin-top: 1vh;
+    transition: 0.5s;
+}
+
+#toggle{
+    opacity: 0;
+}
+
+#toggle1:checked ~ html body {
+    background-color: #fff;
+}
+
+#play{
+    position: absolute;
+    bottom: 5vh;
+    left: 6vh;
+
+}
+
+#toggle:checked ~ div p i{
+    color: wheat;
+}
+
+#play #playp{
+    font-size: 2rem;
+}
+
