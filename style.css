@@ -21,6 +21,7 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: #070037;
+    overflow-x:hidden;
 }
 
 #page1{
@@ -141,7 +142,7 @@ input{
 
 footer{
     background-color: #070037;
-    height: 50vh;
+    height: 20vh;
     text-align: center;
 }
 
@@ -428,7 +429,7 @@ footer a:hover{
     }
 
     .text2{
-        height:  60vh;
+        height:  69vh;
     }
 }
 
