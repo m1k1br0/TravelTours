@@ -17,6 +17,11 @@ header{
     background-color: #fff;
 }
 
+html{
+
+scroll-behavior:smooth;
+}
+
 input{
 z-index:99;
     
