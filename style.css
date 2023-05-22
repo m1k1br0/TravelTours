@@ -17,6 +17,10 @@ header{
     background-color: #fff;
 }
 
+input{
+z-index:99;
+}
+
 body{
     width: 100vw;
     height: 100vh;
